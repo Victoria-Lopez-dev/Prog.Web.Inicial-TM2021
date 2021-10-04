@@ -1,0 +1,8 @@
+/* selector de etiquetas */
+body{
+    background-color: cornflowerblue;
+}
+/* selector de clases, RECORDATORIO: el "." hace referencia a que es una clase */
+.menu-item{
+   color: white; 
+}

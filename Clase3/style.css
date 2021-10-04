@@ -1,0 +1,37 @@
+
+
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+
+}
+
+
+
+.padre{
+    width: 80%;
+    height: fit-content;
+    background-color: lightpink;
+    display: flex;
+    justify-content: space-between; /*eje horizontal*/
+    align-items: center; /*eje vertical*/
+   /* flex-wrap: wrap;*/
+   align-self: center;
+    justify-self: self-end;
+}
+
+
+.hijo{
+    width: 100px;
+   height: 100px;
+    background-color: salmon;
+    border: 2px solid  black;
+    border-radius: 50%;
+}
+.verde{
+    background-color: green;
+    display: flex;
+    align-self: flex-start;
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creando Formularios</title>
+</head>
+<body>
+    <form action="">
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" id="nombre" name="nombreCompleto" placeholder="Escriba nombre completo">
+        <br>
+        <label for="email">Escriba su Email</label>
+        <input type="email" placeholder="unemail@ejemplo.com">
+        <br>
+     <label for="turno">Elija que turno quiere: </label>
+     <br>
+        <label for="turnoM" class="LabelTurno">Turno mañana</label>
+        <input type="radio" id="turnoM" name="turno" value="mañana">
+
+        <label for="turnoT">Turno tarde</label>
+        <input type="radio" id="turnoT" name="turno" value="tarde">
+
+        <label for="turnoN">Turno noche</label>
+        <input type="radio" id="turnoN" name="turno" value="noche">
+        <br>
+
+        <label for="diplomatura">Indique a que cursos se anota</label>
+        <br>
+        <label for="PWI">Prog.Web.Inicial</label>
+        <input type="checkbox" id="PWI"name="cursos" value="Prog.Web.Inicial">
+
+        <label for="PWA">Prog.Web.Avanzado</label>
+        <input type="checkbox" id="PWA" name="cursos" value="Prog.Web.Avanzado">
+        <br>
+
+        <label for="nivel">Elija el nivel de conocimiento</label>
+        <select name="nivel" id="nivel">
+            <option value="inicial">inicial</option>
+            <option value="intermendio">intermendio</option>
+            <option value="avanzado">avanzado</option>
+        </select>
+
+       <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

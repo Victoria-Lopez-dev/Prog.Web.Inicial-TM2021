@@ -1,0 +1,87 @@
+h1{
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+p{
+
+    text-align: justify;
+    text-indent: 20px;
+    width: 50%;
+}
+h2{
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: lowercase;
+    text-decoration: overline;
+
+}
+li{
+    font-size: larger;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: green;
+}
+
+.decorado{
+    background-color: red;
+   
+}
+
+nav{
+    display: flex;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+
+/*Caso 1*/
+/* cuando tenga 320px de ancho o mas ...(su piso)
+@media (min-width:320px){
+
+    body{
+        background-color: indianred;
+    }
+    ul{
+        flex-direction: column;
+    }
+}
+*/
+
+/*Caso 2*/
+/*cuando tenga 320px de ancho o menos .. (su techo)*/
+
+@media (max-width:320px){
+ body{
+        background-color: lightgreen;
+    }
+    ul{
+        flex-direction: column;
+    }
+    p{
+        font-size: 10px;
+       
+    }
+}
+
+
+@media (max-width:768px) {
+    /*los cambios en estilo que necesito*/
+    body{
+        background-color: violet;
+    }
+    ul{
+        flex-direction: column;
+    }
+
+}
+/*
+@media (max-width:990px){
+    los cambios en estilo que necesito
+}*/

@@ -1,0 +1,34 @@
+.padre{
+    height: 500px;
+    background-color: pink;
+    display: grid;
+    height: fit-content;
+    grid-template-columns: repeat(5, 1fr);
+   /*  grid-template-rows: repeat(5, 1fr);*/
+}
+
+/* ejemplo: pantalla de 1000px divide en este caso por 5 y 
+hace que cada columna mida 200px*/
+
+/* ejemplo : pantalla de 1000px con 300px y 4 fr
+pantalla 1000px -300px = 700px /4 para ver cuando mida cada una de las columnas restantes */
+
+.hijo{
+    display: flex;
+    justify-self: center;
+    background-color: blue;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.verde{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: green;
+   /*grid-column: 1 / 3;   -- para que ocupe desde la primer columna hasta antes de iniciar la columna 3
+
+   grid-row: 1 / 4 ;    -- para que ocupe desde la primer fila hasta antes de iniciar la fila 4
+   */
+}

@@ -1,0 +1,39 @@
+body{
+    position: relative;
+}
+.uno{
+    background-color: coral;
+    position: absolute;
+    left: 600px;
+   
+}
+
+.cubito{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.dos{
+    background-color: cornflowerblue;
+    margin-top:80px;
+}
+.cubos{
+    width: 500px;
+    height: 500px;
+    
+}
+h1{
+    background-color: pink;
+    position: fixed;
+    width: 100%;
+    top:80px;
+}
+h2{
+    background-color: yellowgreen;
+    width: 100%;
+    position: sticky;
+    top:5px;
+}
