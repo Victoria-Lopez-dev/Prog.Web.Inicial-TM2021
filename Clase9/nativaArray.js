@@ -43,8 +43,7 @@ function cambioDeDato() {
 //      al arrayNumeros para cada uno de sus componentes    
    let muestra= arrayNumeros.forEach((num)=>{
 
-   let nuevo = num+10;
-   num=nuevo;
+    arrayNumeros[arrayNumeros.indexOf(num)]= num+10
 
     });
     console.log(arrayNumeros)
