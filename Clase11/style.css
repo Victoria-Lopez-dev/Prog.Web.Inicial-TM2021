@@ -1,0 +1,37 @@
+#titulo{
+    font-size: 30px;
+}
+
+#titulo:hover {
+    color:red;
+}
+.otroColor{
+    color:blue;
+}
+
+.colorRosa{
+    color: pink;
+    font-weight: bold;
+}
+
+.texto{
+    color: green;
+}
+
+.desplegando{
+    display: block;
+}
+
+.plegar{
+    display: none;
+}
+
+.colorRojo{
+    color: red;
+}
+button:active{
+    background-color: hotpink;
+}
+.rosa{
+    background-color: hotpink;
+}
