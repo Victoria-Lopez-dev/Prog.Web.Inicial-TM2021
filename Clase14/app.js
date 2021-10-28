@@ -6,6 +6,7 @@ const validador = require('validator');
 
 app.use(express.json());
 
+
 // peticion GET pedidos
 //request  req lo que trae en el pedido
 //response res  lo que le devuelvo o respondo al pedido
@@ -21,6 +22,7 @@ app.get('/welcome',(req,res)=>{
     res.send("<h1>Bienvenido</h1>");
    
 });
+
 
 app.get('/welcome/:dato',(req,res)=>{
 
@@ -70,3 +72,4 @@ si un JSON nos figura de la siguiente forma:
 // JSON.parse(utils) funcion que le saca esas comillitas y se puede usar como un array de objetos
 
 //console.log(utils[0])
+
