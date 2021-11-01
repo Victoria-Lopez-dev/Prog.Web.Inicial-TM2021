@@ -4,6 +4,7 @@ const data= require('./data');
 const utils = require('./utils.json');
 const validador = require('validator');
 
+
 app.use(express.json());
 
 
@@ -24,11 +25,19 @@ app.get('/welcome',(req,res)=>{
 });
 
 
-app.get('/welcome/:dato',(req,res)=>{
+
+app.get('/info/:dato',(req,res)=>{
 
     let dato=req.params.dato;
-   console.log(validador.isEmail(dato));
-    res.send("Bienvenido!")
+    let verificarDato=validador.isEmail(dato)
+   console.log(verificarDato);
+
+    if(verificarDato === true){
+        res.send("Bienvenido");
+    }else{
+         res.send("dato invalido");
+    }
+   
 });
 
 app.get('/home',(req,res)=>{
@@ -41,6 +50,7 @@ app.get('/home',(req,res)=>{
 
 app.post('/home',(req,res)=>{
     let inf= req.body;
+    
     console.log(typeof(inf));
     utils.push(inf);
     console.log(utils);
