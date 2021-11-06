@@ -8,6 +8,7 @@ li{
 .contenedor{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 20px;
 }
 .card{
     border: 2px solid green;
