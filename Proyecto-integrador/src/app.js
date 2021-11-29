@@ -14,6 +14,8 @@ app.use(express.json());
 
 //uso de EJS y de archivos publicos
 
+
+
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname,'public')));

@@ -11,12 +11,30 @@ app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs');
 app.use(express.static(path.join(__dirname,'public')));
 
-app.get('/',(req,res)=>{
-    res.render('index',{
-        titulo, //titulo :titulo
-        dataProductos:info  //le paso a index la data que traje de productos.js
-    });
-});
+
+/*     en el router      */
+router.get('/',getProducts);
+
+
+/*    en el controller   */
+const info = require('./productosJSON.json');
+
+const getProducts=(req,res)=>{
+ 
+        res.render('index',{
+            titulo, //titulo :titulo
+            dataProductos:info  //le paso a index la data que traje de productos.js
+        });
+
+}
+
+
+
+
+
+
+
+
 
 app.get('/contacto',(req,res)=>{
     res.render('./pages/contacto');
