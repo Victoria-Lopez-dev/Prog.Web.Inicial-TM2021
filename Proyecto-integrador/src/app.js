@@ -10,7 +10,7 @@ databaseConnection.connect();
 
 //vamos a recibir info en formato JSON
 app.use(express.json());
-
+app.use(express.urlencoded({extended:false}));
 
 //uso de EJS y de archivos publicos
 
