@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname,'public')));
 
 
 //rutas
-app.use("/tienda",routes);
+app.use("/index",routes);
 
 /* Como lo escribiamos antes
 

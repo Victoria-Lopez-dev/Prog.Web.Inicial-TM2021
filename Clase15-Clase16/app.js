@@ -1,7 +1,7 @@
 const express= require('express');
 const app= express();
 const path = require('path');
-const info = require('./productosJSON.json');
+const dataProductos = require('./productosJSON.json');
 const titulo ="Hola soy Victoria";
 
 //console.log(info)
@@ -13,26 +13,11 @@ app.use(express.static(path.join(__dirname,'public')));
 
 
 /*     en el router      */
-router.get('/',getProducts);
-
-
-/*    en el controller   */
-const info = require('./productosJSON.json');
-
-const getProducts=(req,res)=>{
+app.get('/',(req,res)=>{
  
-        res.render('index',{
-            titulo, //titulo :titulo
-            dataProductos:info  //le paso a index la data que traje de productos.js
-        });
+    res.render('index',{dataProductos});
 
-}
-
-
-
-
-
-
+});
 
 
 

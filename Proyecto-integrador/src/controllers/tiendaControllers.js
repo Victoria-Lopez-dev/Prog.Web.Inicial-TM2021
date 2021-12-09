@@ -46,7 +46,7 @@ const getForm= (req,res)=>{
 const addnewProduct =(req,res)=>{
     const {producto,categoria,descripcion,precio}= req.body;
   
-         databaseConnection.query('INSERT INTO productos(producto,categoria,imagen,descripcion,precio)VALUES(?,?,"/imagenes/estilo-madera.png",?,?)',[producto,categoria,descripcion,parseInt(precio)],(error,data)=>{
+         databaseConnection.query('INSERT INTO productos(producto,categoria,imagen,descripcion,precio)VALUES(?,?,"/imagenes/estilo-madera.png",?,?)',[(producto,categoria,descripcion,parseInt(precio))],(error,data)=>{
         if(error){
             console.log(error)
         }else{

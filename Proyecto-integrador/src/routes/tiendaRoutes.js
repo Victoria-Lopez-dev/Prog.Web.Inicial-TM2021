@@ -19,7 +19,7 @@ const getAllProducts= require ('../controllers/tiendaControllers')
 */
 
 
-routes.get("/",renderHome);
+routes.get("/index",renderHome);
 
 
 routes.get("/productos",getAllProducts);
